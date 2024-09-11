@@ -1,0 +1,35 @@
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-color: hsl(20, 100%, 99%); /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 5cm;
+    padding: 4;
+    background-image: url('imagem/ceu.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 1cm; /* Tamanho da fonte */
+    color: #ff8b06; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    width: start;
+    margin-top: -450px; /* Margem superior de 5 pixels */  
+    text-align: center;
+    align-items: center;
+    margin-top:first-line;
+}
+
+video {
+    /* Estilos aqui */
+    width: 600px; /*Define a largura do vídeo.*/
+    height: 400px; /*Define a altura do vídeo.*/
+    position: absolute; /*Permite posicionar o vídeo de forma absoluta ou relativa.*/
+    margin-top: 50px;
+    margin-left: -40px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encontre seu Amor</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vinda Maria Carolina!</h1>
+    </header>
+      <main>
+        <section>
+            <audio id="myAudio" controls autoplay loop>
+                <source src="audio/myUniverse.mp3" type="audio/ogg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <script>
+                document.addEventListener('visibilitychange', function() {
+                  if (document.visibilityState === 'hidden') {
+                    const audio = document.getElementById('myAudio');
+                    audio.pause();
+                  }
+                });
+              </script>
+            <h2><img src="imagem/coracao.gif" alt="Descrição da imagem"></h2>
+            <input type="text" placeholder="Digite o nome do seu amor ou como você costuma chama-lá" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+            <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+       </main>
+    <footer>
+        <p>2024 - @Todos os direitos reservados para o amor da sua vida.</p>
+        
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
